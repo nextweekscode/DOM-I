@@ -42,3 +42,32 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //just to save this
+const nav = document.querySelector('nav')
+const navBar = document.querySelectorAll('a')
+navBar[0].textContent = 'Services'
+navBar[1].textContent = 'Product'
+navBar[2].textContent = 'Vision'
+navBar[3].textContent = 'Features'
+navBar[4].textContent = 'About'
+navBar[5].textContent = 'Contract'
+
+navBar.forEach(l => {
+  l.style.color = 'green'
+})
+
+const newLink1 = document.createElement('a')
+newLink1.textContent = 'IDK'
+newLink1.href = '#'
+nav.appendChild(newLink1)
+
+const newLink2 = document.createElement('a')
+newLink2.textContent = 'Link2'
+newLink2.href = '#'
+nav.prepend(newLink2)
+
+
+
+
+
+
+
